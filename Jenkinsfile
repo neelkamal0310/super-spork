@@ -1,8 +1,6 @@
 pipeline {
     agent {
-        docker {
-            dockerfile true
-        }
+        dockerfile true
     }
     stages {
         stage('Checkout') {
@@ -14,8 +12,8 @@ pipeline {
             }
         }
         stage("Build") {
-            echo "Building project"
             steps {
+                echo "Hello World"
                 sh '''
                 echo HEllo World
                 '''
