@@ -15,7 +15,7 @@ pipeline {
             steps {
                 withCredentials([
                 string(credentialsId: 'AWS_ACCESS_KEY_ID', variable: 'awsAccessKey'),
-                string(credentialsId: 'AWS_SECRET_ACCESS_KEY', variable: 'awsSecretKey')
+                string(credentialsId: 'AWS_SECRET_ACCESS_KEY', variable: 'awsSecretKey'),
                 string(credentialsId: 'AWS_DEFAULT_REGION', variable: 'awsDefaultRegion')
                 ]) {
                     sh '''
