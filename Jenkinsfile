@@ -27,7 +27,7 @@ pipeline {
                     export AWS_ACCESS_KEY_ID=$awsAccessKey
                     export AWS_SECRET_ACCESS_KEY=$awsSecretKey
                     export AWS_DEFAULT_REGION=$awsDefaultRegion
-                    aws s3 cp --recursive docs/ s3://${awsBucket}/
+                    aws s3 cp --recursive docs s3://${awsBucket}/
                     '''
                 }
             }
